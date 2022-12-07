@@ -10,16 +10,17 @@
         "get",
         "post"
       ],
-      "route": "users/create"
+      "route": "products/list"
     },
     {
       "type": "cosmosDB",
-      "direction": "out",
+      "direction": "in",
       "name": "doc",
       "databaseName": "AnabelsContainer",
-      "collectionName": "users",
+      "collectionName": "combinedProducts",
       "createIfNotExists": "true",
-      "connectionStringSetting": "AzureCosmosDBConnectionString"
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "sqlQuery": "SELECT * from c"
     },
     {
       "type": "http",

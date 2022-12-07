@@ -11,7 +11,6 @@ def main(req: func.HttpRequest, doc: func.DocumentList) -> func.HttpResponse:
     for user in doc:
         user_json = {
             "id": user['id'],
-            "name": user['name'],
             "email": user['email']
         }
         users_json.append(user_json)
