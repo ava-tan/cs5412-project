@@ -10,7 +10,7 @@
         "get",
         "post"
       ],
-      "route": "users/create/{name}"
+      "route": "users/create"
     },
     {
       "type": "cosmosDB",
