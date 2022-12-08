@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    # will build ./docker/web/Dockerfile
+    build: ./docker/web
+    ports:
+      - "80:80"
+    # volumes:
+    #   - .:/code
+    # ml:
+    #   # will build ./docker/ml/Dockerfile
+    #   build: ./docker/ml
+    #   ports:
+    #     - "9001:9001"
