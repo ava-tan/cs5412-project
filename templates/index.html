@@ -5,16 +5,15 @@
 <head>
   <meta charset="utf-8">
   <title>SmartSnap</title>
-  <!-- <link rel="stylesheet" href="../public/styles/style.css"> -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body class=form>
   <div class="center">
     <h1>Login</h1>
-    <form method="post">
+    <form action="/signup" method="post">
       <div class="txt_field">
-        <input type="text" required>
+        <input type="email" name="email" required>
         <span></span>
         <label>Email</label>
       </div>
@@ -29,7 +28,7 @@
         <label>Password</label>
       </div> -->
       <!-- <div class="pass">Forgot Password?</div> -->
-      <a href="/form"><input type="button" value="Login"></a>
+      <input type="submit" value="Login">
       <div class="signup_link">
         Not a member? <a href="#">Signup</a>
       </div>
