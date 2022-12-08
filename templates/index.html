@@ -5,7 +5,8 @@
 <head>
   <meta charset="utf-8">
   <title>SmartSnap</title>
-  <link rel="stylesheet" href="../public/styles/style.css">
+  <!-- <link rel="stylesheet" href="../public/styles/style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body class=form>
@@ -23,7 +24,7 @@
         <label>Password</label>
       </div> -->
       <!-- <div class="pass">Forgot Password?</div> -->
-      <a href="./form.html"><input type="button" value="Login"></a>
+      <a href="/form"><input type="button" value="Login"></a>
       <div class="signup_link">
         Not a member? <a href="#">Signup</a>
       </div>

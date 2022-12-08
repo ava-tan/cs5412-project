@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>SmartSnap Form</title>
-  <link rel="stylesheet" href="../public/styles/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body class=home>
@@ -18,7 +18,7 @@
 
     <div class="Cart-Items">
       <div class="image-box">
-        <img src="../public/images/apple.png" style={{ height="120px" }} />
+        <img src="{{url_for('static', filename='images/apple.png')}}" height="120px" />
       </div>
       <div class="about">
         <h1 class="title">Apple Juice</h1>
@@ -37,7 +37,7 @@
 
     <div class="Cart-Items pad">
       <div class="image-box">
-        <img src="../public/images/grapes.png" style={{ height="120px" }} />
+        <img src="{{url_for('static', filename='images/grapes.png')}}" height="120px" />
       </div>
       <div class="about">
         <h1 class="title">Grape Juice</h1>

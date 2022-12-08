@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>SmartSnap Form</title>
-  <link rel="stylesheet" href="../public/styles/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body class=form>
@@ -32,7 +32,7 @@
         <span></span>
         <label>Zip Code</label>
       </div>
-      <a href="home.html"><input type="button" value="Create List"></a>
+      <a href="/home"><input type="button" value="Create List"></a>
     </form>
   </div>
 
