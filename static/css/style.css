@@ -137,7 +137,7 @@
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,6 +149,8 @@
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 10px 20px #1687d933;
+  padding: 20px;
+  margin: 20px;
 }
 
 .home .Header {
@@ -196,13 +198,14 @@
 }
 
 .home .title {
-  padding-top: 10px;
+  padding-top: 25px;
   line-height: 10px;
-  font-size: 32px;
+  font-size: 16px;
   font-family: 'Open Sans';
   font-weight: 800;
   color: #202020;
 }
+
 
 .home .subtitle {
   line-height: 10px;
